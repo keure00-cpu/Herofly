@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HeroFly - As aventuras de Aceleron, o carro mais rápido do planeta." />
+  <title>HeroFly | O Raio Azul</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul: #087df5;
+      --azul-escuro: #071a3d;
+      --azul-neon: #00d9ff;
+      --amarelo: #ffd21f;
+      --vermelho: #ff416c;
+      --branco: #ffffff;
+      --cinza: #a9bbd5;
+      --fundo: #050b1d;
+      --cartao: #0b1735;
+      --borda: rgba(0, 217, 255, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 20% 10%, rgba(0, 120, 255, 0.25), transparent 28%),
+        radial-gradient(circle at 80% 30%, rgba(0, 217, 255, 0.12), transparent 24%),
+        var(--fundo);
+      color: var(--branco);
+      font-family: "Roboto", sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.claro {
+      --fundo: #eaf4ff;
+      --cartao: #ffffff;
+      --branco: #071a3d;
+      --cinza: #44546c;
+      background: #eaf4ff;
+    }
+
+    h1, h2, h3, .logo, .botao, .tag {
+      font-family: "Press Start 2P", cursive;
+    }
+
+    .barra {
+      align-items: center;
+      background: rgba(5, 11, 29, 0.88);
+      border-bottom: 1px solid var(--borda);
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+    }
+
+    body.claro .barra {
+      background: rgba(255,255,255,0.9);
+    }
+
+    .logo {
+      color: var(--azul-neon);
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--amarelo);
+    }
+
+    .menu {
+      align-items: center;
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .menu a {
+      color: var(--branco);
+      font-weight: 700;
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .menu a:hover {
+      color: var(--azul-neon);
+    }
+
+    .
